@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import Flatbuttom from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import Toggle from 'material-ui/Toggle';
 import TextField from 'material-ui/TextField';
 import {red500, blue500, orange500} from 'material-ui/styles/colors';
@@ -21,9 +22,14 @@ export default class LoginComponent extends React.Component{
 
     render() {
         return (
+            <div>
+                <div></div>
             <Card>
-                <CardHeader title="Collector" subtitle="Login">
-
+                <CardHeader title="Collector" titleStyle={{
+                    fontFamily:  'Pacifico',
+                    fontSize: 45,
+                }}>
+                    <h2>Login</h2>
                 </CardHeader>
                 <CardText className="login-container">
                     <TextField className ="login-container__user-name-input"
@@ -45,10 +51,11 @@ export default class LoginComponent extends React.Component{
                 <CardTitle>
                 </CardTitle>
 
-                <CardActions>
-                        <Flatbuttom label="Login"/>
+                <CardActions className="login-button-container">
+                        <RaisedButton  label="Login" primary={true}/>
                 </CardActions>
             </Card>
+            </div>
         );
     }
 
