@@ -6,7 +6,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 import logo from './logo.svg';
-import LoginComponent from './components/login-component';
+import LoginComponent from './components/login/login-component';
+import MainComponent from './components/main/main-component';
 import './App.css';
 
 const muiTheme = getMuiTheme({
@@ -14,13 +15,46 @@ const muiTheme = getMuiTheme({
 })
 
 class App extends Component {
+  constructor(props){
+        super(props);
+
+        this.loginCallback = this.loginCallback.bind(this);
+
+        this.state = {
+          isUserLoggedIn: false
+          };
+        
+  }
+
+  loginCallback(e){
+     this.setState({
+      isUserLoggedIn: true
+    });
+    
+  }
+
   render() {
-    return (
-      <MuiThemeProvider muiTheme={muiTheme}>
-        <div className ="loginComponent">
-          <LoginComponent />
+    let currentView;
+    if(!this.state.isUserLoggedIn){
+      currentView =  <div className ="loginComponent" >
+      <LoginComponent loginClick={this.loginCallback} />
+      </div>;
+      
+      }else{
+      
+        currentView = <div className ="">
+          <MainComponent />
         </div>
+      }
+
+
+
+    return (
+      
+      <MuiThemeProvider muiTheme={muiTheme}>
+        {currentView}
       </MuiThemeProvider>
+        
     );
   }
 }
