@@ -32,13 +32,13 @@ html, body, #root, .loginComponent {
 .loginComponent {
   background: #74e3ec;
   /* Old Browsers */
-  background: -webkit-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("images/records-bg.jpeg");
+  background: -webkit-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("./assets/images/records-bg.jpeg");
   /*Safari 5.1-6*/
-  background: -o-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("images/records-bg.jpeg");
+  background: -o-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("./assets/images/records-bg.jpeg");
   /*Opera 11.1-12*/
-  background: -moz-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("images/records-bg.jpeg");
+  background: -moz-linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("./assets/images/records-bg.jpeg");
   /*Fx 3.6-15*/
-  background-image: linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("images/records-bg.jpeg");
+  background-image: linear-gradient(bottom right, rgba(116, 227, 236, 0.6), rgba(199, 255, 226, 0.6)), url("./assets/images/records-bg.jpeg");
   /*Standard*/
   background-repeat: no-repeat;
   background-size: cover;
