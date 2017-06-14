@@ -35,26 +35,32 @@ export default class LoginComponent extends React.Component{
 
     render() {
         return (
-            <div>
+            <div backgroundColor="blue">
                 <div></div>
             <Card>
                 <CardHeader title="Collector" titleStyle={{
                     fontFamily:  'Pacifico',
+                    color:white,
                     fontSize: 45,
-                }}>
-                    <h2>Login</h2>
+                    backgroundColor: blue500,
+                }
+                }
+                style={{
+                    backgroundColor: blue500,
+                }}
+                >
                 </CardHeader>
                 <CardText className="login-container">
                     <TextField className ="login-container__user-name-input"
-                    floatingLabelText="User Name"
-                    floatingLabelFocusStyle={styles.messageStyle}
-                    floatingLabelStyle={styles.messageStyle}/>
+                        floatingLabelText="User Name"
+                        floatingLabelFocusStyle={styles.messageStyle}
+                        floatingLabelStyle={styles.messageStyle}/>
 
-                          <TextField 
-                    floatingLabelText="Password" className="login-container__password-input"
-                    type = 'password'
-                    floatingLabelFocusStyle={styles.messageStyle}
-                    floatingLabelStyle={styles.messageStyle}/>
+                    <TextField 
+                        floatingLabelText="Password" className="login-container__password-input"
+                        type = 'password'
+                        floatingLabelFocusStyle={styles.messageStyle}
+                        floatingLabelStyle={styles.messageStyle}/>
 
                 </CardText>
 
@@ -66,7 +72,7 @@ export default class LoginComponent extends React.Component{
 
                 <CardActions className="login-button-container">
                         <RaisedButton label="login" secondary={true} onClick={this.props.loginClick} />
-                        <RaisedButton  label="continue with facebook" labelStyle={{color:white}} icon={<Fblogin> </Fblogin>} backgroundColor={blue900}/>
+                        <RaisedButton  label="continue with facebook" labelStyle={{color:white}} icon={<Fblogin> </Fblogin>} backgroundColor={blue900} onClick={this.props.loginClick}/>
                         
                 </CardActions>
             </Card>
