@@ -6,17 +6,10 @@ import Toggle from 'material-ui/Toggle';
 import TextField from 'material-ui/TextField';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
-import {red500, blue500, orange500, blue900,white } from 'material-ui/styles/colors';
 import Fblogin from 'react-icons/lib/fa/facebook-square';
-
-
-const styles = {
-    errorStyle: {color:red500},
-    warningStyle: {color:orange500},
-    messageStyle: {color:blue500},
-    facebookStyle: {color:blue900},
-};
-
+import ColorStyles from  '../../assets/styles/color-styles';
+import FontStyles from '../../assets/styles/font-styles';
+import CardStyles from '../../assets/styles/card-styles';
 
 class Facebooklogin extends React.Component {
     render() {
@@ -28,39 +21,30 @@ export default class LoginComponent extends React.Component{
 
     constructor(props){
         super(props);
-
-        
-
+ 
     }
 
     render() {
+        
         return (
             <div backgroundColor="blue">
                 <div></div>
             <Card>
-                <CardHeader title="Collector" titleStyle={{
-                    fontFamily:  'Pacifico',
-                    color:white,
-                    fontSize: 45,
-                    backgroundColor: blue500,
-                }
-                }
-                style={{
-                    backgroundColor: blue500,
-                }}
+                <CardHeader title="Collector" titleStyle={FontStyles.TitleStyle}
+                style={CardStyles.CardHeaderStyle}
                 >
                 </CardHeader>
                 <CardText className="login-container">
                     <TextField className ="login-container__user-name-input"
                         floatingLabelText="User Name"
-                        floatingLabelFocusStyle={styles.messageStyle}
-                        floatingLabelStyle={styles.messageStyle}/>
+                        floatingLabelFocusStyle={ColorStyles.messageStyle}
+                        floatingLabelStyle={ColorStyles.messageStyle}/>
 
                     <TextField 
                         floatingLabelText="Password" className="login-container__password-input"
                         type = 'password'
-                        floatingLabelFocusStyle={styles.messageStyle}
-                        floatingLabelStyle={styles.messageStyle}/>
+                        floatingLabelFocusStyle={ColorStyles.messageStyle}
+                        floatingLabelStyle={ColorStyles.messageStyle}/>
 
                 </CardText>
 
@@ -72,7 +56,8 @@ export default class LoginComponent extends React.Component{
 
                 <CardActions className="login-button-container">
                         <RaisedButton label="login" secondary={true} onClick={this.props.loginClick} />
-                        <RaisedButton  label="continue with facebook" labelStyle={{color:white}} icon={<Fblogin> </Fblogin>} backgroundColor={blue900} onClick={this.props.loginClick}/>
+                        <RaisedButton  label="continue with facebook" labelStyle={{color:ColorStyles.white}} icon={<Fblogin> </Fblogin>} 
+                        backgroundColor={ColorStyles.primaryColorDark} onClick={this.props.loginClick}/>
                         
                 </CardActions>
             </Card>
