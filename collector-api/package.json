@@ -1,0 +1,27 @@
+{
+  "name": "collector-api",
+  "version": "1.0.0",
+  "description": "RESTful Collector Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffreyLangston/Collector.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Node",
+    "Javascript",
+    "MongoDB"
+  ],
+  "author": "Jeff Langston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeffreyLangston/Collector/issues"
+  },
+  "homepage": "https://github.com/JeffreyLangston/Collector#readme"
+}
