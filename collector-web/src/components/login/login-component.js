@@ -50,7 +50,7 @@ export default class LoginComponent extends React.Component{
 
                 <CardActions className="login-button-container">
                         <RaisedButton label="login" secondary={true} onClick={this.props.loginClick} />
-                        <FacebookLogin />
+                        <FacebookLogin loginClick={this.props.loginClick} />
                         
                 </CardActions>
             </Card>
