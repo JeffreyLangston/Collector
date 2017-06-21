@@ -36,21 +36,20 @@ class App extends Component {
   render() {
     let currentView;
     if(!this.state.isUserLoggedIn){
-      currentView =  <div className ="loginComponent" >
+      currentView =  
+      <div className ="loginComponent" >
       <LoginComponent loginClick={this.loginCallback} />
       </div>;
       
       }else{
       
-        currentView = <div className ="">
+        currentView = 
+        <div className ="">
           <MainComponent />
         </div>
       }
 
-
-
     return (
-      
       <MuiThemeProvider muiTheme={muiTheme}>
         {currentView}
       </MuiThemeProvider>

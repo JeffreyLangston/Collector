@@ -6,16 +6,10 @@ import Toggle from 'material-ui/Toggle';
 import TextField from 'material-ui/TextField';
 import FontIcon from 'material-ui/FontIcon';
 import ActionAndroid from 'material-ui/svg-icons/action/android';
-import Fblogin from 'react-icons/lib/fa/facebook-square';
 import ColorStyles from  '../../assets/styles/color-styles';
 import FontStyles from '../../assets/styles/font-styles';
 import CardStyles from '../../assets/styles/card-styles';
-
-class Facebooklogin extends React.Component {
-    render() {
-        return (<div><Fblogin /><div>Continue with Facebook</div></div>)
-    }
-}
+import FacebookLogin from './facebook-login-component';
 
 export default class LoginComponent extends React.Component{
 
@@ -56,8 +50,7 @@ export default class LoginComponent extends React.Component{
 
                 <CardActions className="login-button-container">
                         <RaisedButton label="login" secondary={true} onClick={this.props.loginClick} />
-                        <RaisedButton  label="continue with facebook" labelStyle={{color:ColorStyles.white}} icon={<Fblogin> </Fblogin>} 
-                        backgroundColor={ColorStyles.primaryColorDark} onClick={this.props.loginClick}/>
+                        <FacebookLogin />
                         
                 </CardActions>
             </Card>

@@ -12,7 +12,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 
-export default class LoginComponent extends React.Component{
+export default class MainComponent extends React.Component{
 
     constructor(props){
         super(props);
