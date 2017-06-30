@@ -21,11 +21,12 @@ export default class LoginComponent extends React.Component{
     render() {
         
         return (
-            <div backgroundColor="blue">
-                <div></div>
+            <div>
             <Card>
-                <CardHeader title="Collector" titleStyle={FontStyles.TitleStyle}
-                style={CardStyles.CardHeaderStyle}
+                <CardHeader 
+                    title="Collector" 
+                    titleStyle={FontStyles.TitleStyle}
+                    style={CardStyles.CardHeaderStyle}
                 >
                 </CardHeader>
                 <CardText className="login-container">

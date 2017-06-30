@@ -1,6 +1,7 @@
 class gridRow{
-    constructor(gridCells){
+    constructor(rowID, gridCells){
          this.gridCells = gridCells;
+         this.rowId = rowID;
     }
 }
 
