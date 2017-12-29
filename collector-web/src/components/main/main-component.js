@@ -18,7 +18,7 @@ export default class MainComponent extends React.Component{
 
     constructor(props){
         super(props);
-        this.state =
+        this.state = 
         {
             sliderMenuOpen:false,
             gridColumns: {

@@ -1,26 +1,25 @@
-'use strict';
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
+const Schema = mongoose.Schema;
 
-var BookSchema = new Schema({
+const BookSchema = new Schema({
   title: {
     type: String,
-    Required: 'Kindly enter the title of the book'
-    
+    Required: 'Kindly enter the title of the book',
+
   },
   author: {
     type: String,
-    
+
   },
   created_date: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   own: {
-    type: Boolean,     
-    default: false
-  }
+    type: Boolean,
+    default: false,
+  },
 });
 
 module.exports = mongoose.model('Books', BookSchema);

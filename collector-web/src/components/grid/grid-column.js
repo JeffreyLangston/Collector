@@ -1,7 +1,7 @@
-class gridColumn{
-    constructor(columnName){
-         this.columnName = columnName;
-    }
+class gridColumn {
+  constructor(columnName) {
+    this.columnName = columnName;
+  }
 }
 
 export default gridColumn;

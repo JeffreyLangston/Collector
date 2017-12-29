@@ -11,8 +11,8 @@ import MainComponent from './components/main/main-component';
 import './App.css';
 
 const muiTheme = getMuiTheme({
-  fontFamily: 'Quicksand'
-})
+  fontFamily: 'Quicksand',
+});
 
 class App extends Component {
   constructor(props) {
@@ -21,14 +21,14 @@ class App extends Component {
     this.loginCallback = this.loginCallback.bind(this);
 
     this.state = {
-      isUserLoggedIn: false
+      isUserLoggedIn: false,
     };
 
   }
 
   loginCallback(e) {
     this.setState({
-      isUserLoggedIn: true
+      isUserLoggedIn: true,
     });
 
   }
@@ -36,25 +36,30 @@ class App extends Component {
   render() {
     let currentView;
     if (!this.state.isUserLoggedIn) {
-      currentView = <
-        div className = "loginComponent" >
+      currentView = (<
+        div className= "loginComponent"
+      >
         <
-        LoginComponent loginClick = { this.loginCallback }
-      />  <
-      /div > ;
+        LoginComponent loginClick ={this.loginCallback}
+      />  
+                     <
+      /div >);
 
     } else {
 
-      currentView = <
-        div className = "" >
+      currentView = (<
+        div className= ""
+      >
         <
-        MainComponent / >
-        <
-        /div>
+        MainComponent />
+                     <
+        /div>);
     }
 
-    return ( <
-      MuiThemeProvider muiTheme = { muiTheme } > { currentView } <
+    return (<
+      MuiThemeProvider muiTheme={muiTheme}
+    > { currentView }
+    <
       /MuiThemeProvider>
 
     );
