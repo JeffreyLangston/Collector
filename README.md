@@ -10,5 +10,10 @@ eslint
 npm
 npm intellisense
 
+npm install -g localtunnel
+lt --port 8000
+
+
+
 Run:
 npm run
