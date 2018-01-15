@@ -1,0 +1,35 @@
+{
+  "name": "collector",
+  "version": "1.0.0",
+  "description": "Web App used to track collectables such as graphic novels, digital files or wishlist items.",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runall": "node scripts/startscript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffreyLangston/Collector.git"
+  },
+  "keywords": [
+    "Collections",
+    "audio",
+    "movies",
+    "anime",
+    "graphic",
+    "novel",
+    "React",
+    "babel",
+    "node"
+  ],
+  "author": "Jeffrey Langston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeffreyLangston/Collector/issues"
+  },
+  "homepage": "https://github.com/JeffreyLangston/Collector#readme"
+}

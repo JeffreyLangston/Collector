@@ -1,7 +1,7 @@
 import ColorStyles from './color-styles';
 
 export default{
-    CardHeaderStyle:{
-        backgroundColor: ColorStyles.primaryColor,
-    }
-}
+  CardHeaderStyle: {
+    backgroundColor: ColorStyles.primaryColor,
+  },
+};

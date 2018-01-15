@@ -1,5 +1,5 @@
-  export default{
+export default{
   iconStyles: {
-       marginRight: 24,
-    },
-}
+    marginRight: 24,
+  },
+};

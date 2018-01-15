@@ -4,11 +4,11 @@ import {
   grey100, grey300, grey400, grey500,
   white, darkBlack, fullBlack,
 } from '../colors';
-import {fade} from '../../utils/colorManipulator';
+import { fade } from '../../utils/colorManipulator';
 import spacing from '../spacing';
 
 export default {
-  spacing: spacing,
+  spacing,
   fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: cyan500,

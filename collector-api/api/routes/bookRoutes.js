@@ -1,13 +1,10 @@
-'use strict';
-module.exports = function(app) {
-  var book = require('../controllers/bookController');
+const book = require('../controllers/bookController');
 
-
+module.exports = function bookRoutes(app) {
   // todoList Routes
   app.route('/books')
     .get(book.list_all_bookss)
     .post(book.create_a_book);
-
 
   app.route('/books/:bookId')
     .get(book.read_a_book)

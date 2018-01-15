@@ -1,8 +1,7 @@
-class gridCell{
-    constructor(name, value){
-         this.name = name;
-         this.value = value;
-    }
+class gridCell {
+  constructor(name, value) {
+    this.name = name;
+    this.value = value;
+  }
 }
-
 export default gridCell;
