@@ -1,0 +1,55 @@
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.login-header__title {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px; }
+  .login-header__title h2 {
+    font-family: 'Quicksand', sans-serif; }
+
+html, body, #root, .loginComponent {
+  height: 100% !important; }
+
+.loginComponent {
+  background: #74e3ec;
+  /* Old Browsers */
+  background: -webkit-linear-gradient(135deg, rgba(252, 207, 49, 0.7), rgba(233, 109, 113, 0.9)), url("./assets/images/records-bg.jpeg");
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(135deg, rgba(252, 207, 49, 0.7), rgba(233, 109, 113, 0.9)), url("./assets/images/records-bg.jpeg");
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(135deg, rgba(252, 207, 49, 0.7), rgba(233, 109, 113, 0.9)), url("./assets/images/records-bg.jpeg");
+  /*Fx 3.6-15*/
+  background-image: linear-gradient(135deg, rgba(252, 207, 49, 0.7), rgba(233, 109, 113, 0.9)), url("./assets/images/records-bg.jpeg");
+  /*Standard*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loginComponent .login-container {
+    display: flex;
+    flex-direction: column; }
+  .loginComponent .login-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }

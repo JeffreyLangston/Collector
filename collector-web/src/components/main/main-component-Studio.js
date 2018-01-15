@@ -22,30 +22,30 @@ export default class MainComponent extends React.Component{
         {
             sliderMenuOpen:false,
             gridColumns: [
-                new gridColumn('Title'),
-                new gridColumn('Author'),
-                new gridColumn('Own'),
-                new gridColumn('Rating'),
-                new gridColumn('Want')
+               {"Title": new gridColumn('Title')},
+                {'Author': new gridColumn('Author')},
+                {'Own': new gridColumn('Own')},
+                {'Rating': new gridColumn('Rating')},
+                {'Want': new gridColumn('Want')}
             ],
             gridData: [
-             new gridRow(
-                1, [
-                    new gridCell('Title', 'book1'),
-                    new gridCell('Author', 'author1'),
-                    new gridCell('Own', 'False'),
-                    new gridCell('Rating', '1'),
-                    new gridCell('Want', 'True')
-                ]
+            new gridRow(
+                1, {
+                    "Title": new gridCell('Title', 'book1'),
+                    "Author": new gridCell('Author', 'author1'),
+                    'Own': new gridCell('Own', 'False'),
+                    'Rating': new gridCell('Rating', '1'),
+                    'Want': new gridCell('Want', 'True')
+                    }
                 ),
             new gridRow(
-                2, [
-                    new gridCell('Title', 'book2'),
-                    new gridCell('Author', 'author2'),
-                    new gridCell('Own', 'False'),
-                    new gridCell('Rating', '2'),
-                    new gridCell('Want', 'True')
-                ]
+                2, {
+                    "Title": new gridCell('Title', 'book2'),
+                    "Author": new gridCell('Author', 'author2'),
+                    'Own': new gridCell('Own', 'False'),
+                    'Rating': new gridCell('Rating', '2'),
+                    'Want': new gridCell('Want', 'True')
+                    }
                 ) 
             ]
         };
