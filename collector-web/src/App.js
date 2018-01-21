@@ -56,11 +56,9 @@ class App extends Component {
         /div>);
     }
 
-    return (<
-      MuiThemeProvider muiTheme={muiTheme}
-    > { currentView }
-    <
-      /MuiThemeProvider>
+    return (<MuiThemeProvider muiTheme={muiTheme}> 
+    { currentView }
+    </MuiThemeProvider>
 
     );
   }

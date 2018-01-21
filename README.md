@@ -11,6 +11,7 @@ npm
 npm intellisense
 
 npm install -g localtunnel
+npm install -g nodemon
 lt --port 8000
 
 
